@@ -1,6 +1,6 @@
 <template>
   <div>
-  <table id="calculator" dir="ltr" style="text-align: center; margin: auto">
+    <table id="calculator" dir="ltr" style="text-align: center; margin: auto">
       <tr>
         <td colspan="5">
           <input
@@ -10,7 +10,7 @@
             type="number"
             style="padding: 5px; font-weight: bold; text-align: right"
           />
-          </td>
+        </td>
         <td></td>
       </tr>
       <tr>
@@ -40,3 +40,6 @@
         <td><button @click="sum" id="sum">+</button></td>
         <td><button @click="equal" id="equal">=</button></td>
       </tr>
+    </table>
+  </div>
+</template>
