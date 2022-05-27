@@ -140,3 +140,10 @@ button {
   color: white;
   border-radius: 5px;
 }
+table {
+  border: 1px solid rgb(243, 237, 237);
+  background-color: rgb(14, 28, 75);
+  width: 80%;
+  padding: 4px;
+  border-radius: 8px;
+}
