@@ -96,3 +96,5 @@ minus() {
     clear() {
       this.screen = "";
     },
+    equal() {
+      switch (this.op) {
