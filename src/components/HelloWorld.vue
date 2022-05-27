@@ -147,3 +147,8 @@ table {
   padding: 4px;
   border-radius: 8px;
 }
+input {
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  height: 46px;
+}
