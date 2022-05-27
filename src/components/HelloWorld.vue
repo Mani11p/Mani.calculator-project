@@ -93,3 +93,6 @@ minus() {
       back() {
       this.screen = this.screen.slice(1);
     },
+    clear() {
+      this.screen = "";
+    },
