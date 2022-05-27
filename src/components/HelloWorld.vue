@@ -49,3 +49,11 @@ export default {
   props: {
     msg: String,
   },
+  data() {
+    return {
+      screen: "",
+      Screen2: "",
+      value1: Number,
+      value2: Number,
+      op: "",
+    };
