@@ -131,3 +131,12 @@ export default {
   },
 };
 </script>
+<style scoped>
+button {
+  border: 1.8px solid rgb(88, 88, 88);
+  background-color: rgb(112, 0, 146);
+  width: 100%;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+}
