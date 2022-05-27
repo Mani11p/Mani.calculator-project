@@ -90,3 +90,6 @@ minus() {
       this.op = "%";
       this.screen = "";
     },
+      back() {
+      this.screen = this.screen.slice(1);
+    },
