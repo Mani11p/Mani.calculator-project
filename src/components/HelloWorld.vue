@@ -57,3 +57,8 @@ export default {
       value2: Number,
       op: "",
     };
+    },
+  methods: {
+    digit(n) {
+      this.screen += n;
+    },
