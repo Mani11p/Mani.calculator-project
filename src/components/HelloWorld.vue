@@ -57,7 +57,7 @@ export default {
       value2: Number,
       op: "",
     };
-    },
+  },
   methods: {
     digit(n) {
       this.screen += n;
@@ -75,12 +75,12 @@ export default {
     decimal() {
       this.screen = this.screen + "." + this.scr2;
     },
-minus() {
+    minus() {
       this.value1 = parseFloat(this.screen, 10);
       this.op = "-";
       this.screen = "";
     },
-     div() {
+    div() {
       this.value1 = parseFloat(this.screen, 10);
       this.op = "/";
       this.screen = "";
@@ -90,7 +90,7 @@ minus() {
       this.op = "%";
       this.screen = "";
     },
-      back() {
+    back() {
       this.screen = this.screen.slice(1);
     },
     clear() {
@@ -98,3 +98,36 @@ minus() {
     },
     equal() {
       switch (this.op) {
+        case "+":
+          this.value2 = parseFloat(this.screen, 10);
+          this.screen = this.value2 + this.value1;
+          break;
+        case "-":
+          this.value2 = parseFloat(this.screen, 10);
+          this.screen = this.value1 - this.value2;
+          break;
+        case "/":
+          this.value2 = parseFloat(this.screen, 10);
+          this.screen = this.value1 / this.value2;
+          break;
+        case "%":
+          this.value2 = parseFloat(this.screen, 10);
+          this.screen = this.value1 % this.value2;
+          break;
+        case "*":
+          this.value2 = parseFloat(this.screen, 10);
+          this.screen = this.value1 * this.value2;
+          break;
+        case ".":
+          this.screen = this.screen + "." + this.Screen2;
+          break;
+        case "del":
+          this.screen = this.screen.slice(1);
+          break;
+        default:
+          break;
+      }
+    },
+  },
+};
+</script>
